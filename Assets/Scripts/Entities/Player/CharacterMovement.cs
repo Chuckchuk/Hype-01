@@ -82,7 +82,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
     void handleRotation() {
-        Quaternion currentRotation;
+        //Quaternion currentRotation;
 
         
 
