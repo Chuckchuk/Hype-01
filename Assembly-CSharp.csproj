@@ -36,18 +36,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Entities\Player\CharacterMovement.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\PlayerInput.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\CameraMovement.cs" />
-     <Compile Include="Assets\Scripts\StateMachine.cs" />
      <Compile Include="Assets\Scripts\BaseState.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerMovementSM.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerIdle.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerWalk.cs" />
+     <Compile Include="Assets\Scripts\Entities\Enemy\Statue_Shoot.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\Unused\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\Game\States\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\Unused\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Entities\Enemy\Projectile01.cs" />
      <Compile Include="Assets\Scripts\Entities\Player\States\PlayerJump.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerRun.cs" />
-     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerFall.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerIdle.cs" />
      <Compile Include="Assets\Scripts\Entities\Player\States\PlayerGrounded.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerFall.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerMovementSM.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerRun.cs" />
+     <Compile Include="Assets\Scripts\StateMachine.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\States\PlayerWalk.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Entities\Player\Sword_Projectile.cs" />
+     <Compile Include="Assets\Scripts\Game\States\StartGame.cs" />
+     <Compile Include="Assets\Scripts\Entities\Friendly\YouWinText.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Apps\Game Design\Unity\Unity Install\2021.2.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
