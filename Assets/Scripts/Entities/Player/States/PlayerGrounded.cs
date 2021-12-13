@@ -23,7 +23,7 @@ public class PlayerGrounded : BaseState {
      */
     public override void InitializeSubState(){
         BaseState SubState = null;
-        if (_context.CurrentLvl2State != null) {
+        if (_context.StateList[this.StateLayer + 1] != null) {
             SubState = _context.StateList[this.StateLayer + 1];
         }
         //Idle
@@ -58,5 +58,20 @@ public class PlayerGrounded : BaseState {
     */
     public override void Update(){
         //Debug.Log("SUB STATE: " + SubState);
+        _context.VerticalMovement = -0.5f;
+
+        //Change States
+        SwitchState();
+    }
+    private void SwitchState() {
+        //* Switch to Falling or Jumping
+        //   Fall
+        if (!_context.IsGrounded){
+            _context.ChangeState(this.StateLayer, _context.FallState);
+        }
+        //   Jump
+        else if(_context.IsJumpPressed){
+            _context.ChangeState(this.StateLayer, _context.JumpState);
+        }
     }
 }
